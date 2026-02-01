@@ -1,0 +1,34 @@
+# Maintainer: Luke Hinds <lukehinds@gmail.com>
+pkgname=nono
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Capability-based shell for AI agents with OS-enforced sandboxing"
+arch=('x86_64' 'aarch64')
+url="https://github.com/lukehinds/nono"
+license=('Apache-2.0')
+depends=()
+makedepends=('cargo' 'git')
+provides=('nono')
+conflicts=('nono-git')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/lukehinds/nono/archive/v$pkgver.tar.gz")
+sha256sums=('PLACEHOLDER')
+
+build() {
+    cd "$pkgname-$pkgver"
+    export RUSTUP_TOOLCHAIN=stable
+    export CARGO_TARGET_DIR=target
+    cargo build --release --locked
+}
+
+check() {
+    cd "$pkgname-$pkgver"
+    export RUSTUP_TOOLCHAIN=stable
+    cargo test --release --locked
+}
+
+package() {
+    cd "$pkgname-$pkgver"
+    install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/nono"
+    install -Dm0644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+    install -Dm0644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
+}
