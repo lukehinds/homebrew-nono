@@ -1,4 +1,4 @@
-class NonoATAlpha < Formula
+class NonoAlpha < Formula
   desc "Capability-based shell for AI agents with OS-enforced sandboxing (alpha)"
   homepage "https://github.com/always-further/nono"
   license "Apache-2.0"
@@ -30,10 +30,10 @@ class NonoATAlpha < Formula
         brew install always-further/nono/nono
 
       To use the alpha binary (since it's keg-only):
-        #{HOMEBREW_PREFIX}/opt/nono@alpha/bin/nono
+        #{HOMEBREW_PREFIX}/opt/nono-alpha/bin/nono
 
       Or link it (replacing stable):
-        brew link --force nono@alpha
+        brew link --force nono-alpha
 
       nono uses macOS Seatbelt for sandboxing.
 
