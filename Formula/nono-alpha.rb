@@ -6,12 +6,12 @@ class NonoAlpha < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/always-further/nono/releases/download/v0.6.0-alpha.1/nono-v0.6.0-alpha.1-aarch64-apple-darwin.tar.gz"
-      sha256 "9aed2eec0332caf55adc6939631d64c082d2a3e07d2166bbfa968b270dce0729"
+      url "https://github.com/always-further/nono/releases/download/v0.6.0-alpha.2/nono-v0.6.0-alpha.2-aarch64-apple-darwin.tar.gz"
+      sha256 "2159b9d4c0bdaa9fefe8428ea5a2b8390ab16013a5330c571f3cb34e074bf940"
     end
     on_intel do
-      url "https://github.com/always-further/nono/releases/download/v0.6.0-alpha.1/nono-v0.6.0-alpha.1-x86_64-apple-darwin.tar.gz"
-      sha256 "0011036d18c9265e6d49d0c88cfa74180c2ebe853de32edb500f466ff8a37ece"
+      url "https://github.com/always-further/nono/releases/download/v0.6.0-alpha.2/nono-v0.6.0-alpha.2-x86_64-apple-darwin.tar.gz"
+      sha256 "069328e6f959a81999a06fdb87e4a6ee3f10de9b9f543f46a9757d4dcbcb99e3"
     end
   end
 
