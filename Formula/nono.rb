@@ -1,17 +1,17 @@
 class Nono < Formula
   desc "Capability-based shell for AI agents with OS-enforced sandboxing"
   homepage "https://github.com/always-further/nono"
-  version "0.8.0"
+  version "0.8.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/always-further/nono/releases/download/v0.8.0/nono-v0.8.0-aarch64-apple-darwin.tar.gz"
-      sha256 "9b202718d1dd5ec5a70e67538da2e066de5a681bafd447665aac5fec1c803f17"
+      url "https://github.com/always-further/nono/releases/download/v0.8.1/nono-v0.8.1-aarch64-apple-darwin.tar.gz"
+      sha256 "92cb5632588f3802143e3bb6cdb1ef2209723d73869e93f89bd9cd48d2306582"
     end
     on_intel do
-      url "https://github.com/always-further/nono/releases/download/v0.8.0/nono-v0.8.0-x86_64-apple-darwin.tar.gz"
-      sha256 "d195ac81207a3caa787ec423dcf8f2cbe76f96f8d4197138f5b964d34ef7b8a4"
+      url "https://github.com/always-further/nono/releases/download/v0.8.1/nono-v0.8.1-x86_64-apple-darwin.tar.gz"
+      sha256 "8cb7cf4fb831597cdb33b2781572b9abf343f601a6f6de72b9fcae19afca9b53"
     end
   end
 
